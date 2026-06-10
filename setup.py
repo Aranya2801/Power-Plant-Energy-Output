@@ -1,0 +1,38 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="power-plant-energy-output",
+    version="1.0.0",
+    description="Advanced ML system for Combined Cycle Power Plant energy output prediction",
+    author="Aranya",
+    url="https://github.com/Aranya2801/Power-Plant-Energy-Output",
+    license="MIT",
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
+    python_requires=">=3.9",
+    install_requires=[
+        "numpy>=1.24.0",
+        "pandas>=2.0.0",
+        "scikit-learn>=1.4.0",
+        "xgboost>=2.0.0",
+        "lightgbm>=4.0.0",
+        "shap>=0.44.0",
+        "matplotlib>=3.7.0",
+        "seaborn>=0.13.0",
+        "plotly>=5.18.0",
+        "fastapi>=0.110.0",
+        "uvicorn[standard]>=0.27.0",
+        "pydantic>=2.6.0",
+        "streamlit>=1.32.0",
+        "joblib>=1.3.0",
+        "scipy>=1.11.0",
+        "pyyaml>=6.0.0",
+    ],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Intended Audience :: Science/Research",
+    ],
+)
